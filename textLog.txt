@@ -1,0 +1,131 @@
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2
+$ git init
+Initialized empty Git repository in C:/Users/KRiEG/Documents/GitHub/FinalPractic/Kryazhev_kw2/.git/
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git add origin https://github.com/krieg1234/Kryazhev_kw2.git
+fatal: pathspec 'origin' did not match any files
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git remote add origin https://github.com/krieg1234/Kryazhev_kw2.git
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ echo 'Hello world!' >> helloWorld.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git add .
+warning: LF will be replaced by CRLF in helloWorld.txt.
+The file will have its original line endings in your working directory
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git commit -m 'add HelloWold'
+[master (root-commit) 142337c] add HelloWold
+ 1 file changed, 1 insertion(+)
+ create mode 100644 helloWorld.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 228 bytes | 228.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/krieg1234/Kryazhev_kw2.git
+ * [new branch]      master -> master
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git checkout -b ratingBranch
+Switched to a new branch 'ratingBranch'
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (ratingBranch)
+$ echo 'My new rating' >> rating.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (ratingBranch)
+$ git add .
+warning: LF will be replaced by CRLF in rating.txt.
+The file will have its original line endings in your working directory
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (ratingBranch)
+$ git commit -m 'add rating in new branch "ratingBranch"'
+[ratingBranch b9f1c6b] add rating in new branch "ratingBranch"
+ 1 file changed, 1 insertion(+)
+ create mode 100644 rating.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (ratingBranch)
+$ git push origin ratingBranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ratingBranch' on GitHub by visiting:
+remote:      https://github.com/krieg1234/Kryazhev_kw2/pull/new/ratingBranch
+remote:
+To https://github.com/krieg1234/Kryazhev_kw2.git
+ * [new branch]      ratingBranch -> ratingBranch
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (ratingBranch)
+$ git checkout -b commentBranch
+Switched to a new branch 'commentBranch'
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (commentBranch)
+$ echo 'Comment was added' >> comment.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (commentBranch)
+$ git add .
+warning: LF will be replaced by CRLF in comment.txt.
+The file will have its original line endings in your working directory
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (commentBranch)
+$ git commit -m 'add comment in new branch "commentBranch"'
+[commentBranch 59f6249] add comment in new branch "commentBranch"
+ 1 file changed, 1 insertion(+)
+ create mode 100644 comment.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (commentBranch)
+$ git push origin commentBranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'commentBranch' on GitHub by visiting:
+remote:      https://github.com/krieg1234/Kryazhev_kw2/pull/new/commentBranch
+remote:
+To https://github.com/krieg1234/Kryazhev_kw2.git
+ * [new branch]      commentBranch -> commentBranch
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (commentBranch)
+$ git checkout master
+Switched to branch 'master'
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git merge ratingBranch
+Updating 142337c..b9f1c6b
+Fast-forward
+ rating.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 rating.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git merge commentBranch
+Updating b9f1c6b..59f6249
+Fast-forward
+ comment.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 comment.txt
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+KRiEG@KRiEG-PC MINGW64 ~/Documents/GitHub/FinalPractic/Kryazhev_kw2 (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/krieg1234/Kryazhev_kw2.git
+   142337c..59f6249  master -> master
